@@ -1,0 +1,78 @@
+
+<!doctype html>
+<html lang="فا" dir="rtl">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>ثبت‌نام - SkillSwap AI</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header class="site-header">
+  <div class="container">
+    <h1 class="logo">SkillSwap <span>AI</span></h1>
+    <nav>
+      <a href="index.html">خانه</a>
+      <a href="signup.html">ثبت‌نام</a>
+      <a href="profile.html">پروفایل</a>
+    </nav>
+  </div>
+</header>
+
+<main class="container">
+  <section class="form-card">
+    <h2>ثبت‌نام کاربر جدید</h2>
+    <form id="signupForm">
+      <label>نام و نام خانوادگی
+        <input type="text" id="name" required placeholder="مثلاً ندا رضایی">
+      </label>
+
+      <label>ایمیل
+        <input type="email" id="email" required placeholder="example@mail.com">
+      </label>
+
+      <label>بیو کوتاه
+        <input type="text" id="bio" placeholder="کوتاه درباره خودت بنویس">
+      </label>
+
+      <fieldset>
+        <legend>مهارت‌هایی که می‌توانی **بدهی** (حداقل 1 انتخاب)</legend>
+        <div class="skills-group" id="skills_give">
+          <input type="text" id="skill_g_1" placeholder="مثلاً طراحی گرافیک">
+        </div>
+        <button type="button" id="addGive">افزودن مهارت قابل ارائه</button>
+      </fieldset>
+
+      <fieldset>
+        <legend>مهارت‌هایی که **نیاز داری** (حداقل 1 انتخاب)</legend>
+        <div class="skills-group" id="skills_need">
+          <input type="text" id="skill_n_1" placeholder="مثلاً زبان انگلیسی">
+        </div>
+        <button type="button" id="addNeed">افزودن مهارت مورد نیاز</button>
+      </fieldset>
+
+      <label>سطح کلی
+        <select id="level">
+          <option value="beginner">مبتدی</option>
+          <option value="intermediate">متوسط</option>
+          <option value="advanced">پیشرفته</option>
+        </select>
+      </label>
+
+      <div class="form-actions">
+        <button class="cta" type="submit">ثبت و ذخیره</button>
+        <button type="button" id="downloadJson">دانلود JSON پروفایل</button>
+      </div>
+    </form>
+    <div id="message" class="info"></div>
+    <p class="note">در این نسخه دمو، اطلاعات به صورت محلی در مرورگر ذخیره می‌شود و شما می‌توانید فایل JSON پروفایل را دانلود کنید.</p>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">© 2025 SkillSwap AI — نسخه دمو برای ارائه</div>
+</footer>
+
+<script src="scripts.js"></script>
+</body>
+</html>

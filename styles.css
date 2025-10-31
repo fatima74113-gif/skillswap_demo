@@ -1,0 +1,32 @@
+
+:root{
+  --bg:#f4f7fb;
+  --accent:#2a9df4;
+  --card:#ffffff;
+  --text:#222;
+}
+*{box-sizing:border-box;}
+body{font-family: 'Tahoma', sans-serif; background:var(--bg); color:var(--text); margin:0; padding:0; direction:rtl;}
+.container{max-width:920px; margin:0 auto; padding:20px;}
+.site-header{background:var(--card); border-bottom:1px solid #e6eef8;}
+.site-header .container{display:flex; align-items:center; justify-content:space-between;}
+.logo{font-size:22px; margin:0;}
+.logo span{color:var(--accent); font-weight:700;}
+.site-header nav a{margin-left:12px; text-decoration:none; color:var(--text);}
+.hero{padding:40px 0; text-align:center;}
+.hero h2{font-size:30px; margin:0 0 8px;}
+.hero p{margin:0 0 18px;}
+.cta{background:var(--accent); color:#fff; padding:10px 16px; text-decoration:none; border-radius:6px;}
+.cards{display:flex; gap:16px; margin-top:20px;}
+.card{background:var(--card); padding:18px; border-radius:8px; box-shadow:0 2px 6px rgba(0,0,0,0.04); flex:1;}
+.form-card, .profile-card{background:var(--card); padding:18px; border-radius:8px; box-shadow:0 2px 8px rgba(0,0,0,0.05); margin-top:20px;}
+label{display:block; margin:10px 0; font-weight:600;}
+input[type="text"], input[type="email"], select{width:100%; padding:8px; border:1px solid #dfe8f5; border-radius:6px; background:#fcfeff;}
+.skills-group input{margin-top:8px;}
+fieldset{border:1px solid #e6eef8; padding:12px; border-radius:6px; margin-top:12px;}
+legend{font-weight:700;}
+.form-actions{margin-top:12px; display:flex; gap:10px; align-items:center;}
+.info{margin-top:12px; color:green;}
+.note{color:#666; margin-top:10px;}
+.site-footer{background:var(--card); padding:12px 0; border-top:1px solid #e6eef8; margin-top:30px; text-align:center;}
+button, .cta{cursor:pointer;}
